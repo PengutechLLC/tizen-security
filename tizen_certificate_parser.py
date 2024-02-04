@@ -27,7 +27,7 @@ if collection:
 		print("Valid from: " + cert.validFromStr() + " until: "+ cert.validToStr())
 	sys.exit()
 else:
-	print "Error: Invalid File"
+	print ("Error: Invalid File")
 	sys.exit()
 		
 
