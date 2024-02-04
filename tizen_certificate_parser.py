@@ -4,12 +4,12 @@ import xml.dom.minidom
 import sys
 import chilkat
 cert = chilkat.CkCert()
-print "Tizen Certificate Validator"
+print ("Tizen Certificate Validator")
 x=raw_input("Enter Path to author-signature.xml or signature1.xml: ")
 DOMTree = xml.dom.minidom.parse(x)
 collection = DOMTree.documentElement
 if collection:
-	print "Extracting Certificate Information From: " + x
+	print ("Extracting Certificate Information From: ") + x
 	certs = collection.getElementsByTagName("X509Certificate")
 	for c in certs:
 		dat=str(c.firstChild.nodeValue)
